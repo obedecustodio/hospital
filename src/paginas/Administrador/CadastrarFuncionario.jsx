@@ -1,30 +1,47 @@
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function CadastarFuncionario() {
     return (
         <div className="container">
 
             <div className="row m-1">
                 <div className="col-3 alert alert-secondary m-2">
+                   <div className="row">
                     <div className="col-7">
                         <h5>Consultas Pendentes</h5>
                             <h1>2</h1>
                     </div>
+                   <div className="col-5">
+                   <FontAwesomeIcon icon="fa-solid fa-stethoscope" className="img-fluid" />
+                    </div>
+                   </div>
+
                     <div className="col-12 alert alert-warning">Aguardando Pagamentos</div>
                 </div>
-                <div className="col-3 alert alert-danger m-2">
-                    <div className="col-7">
+                <div className="col-3 alert alert-secondary m-2">
+                   <div className="row">
+                   <div className="col-7">
                     <h5>Consultas de Hoje</h5>
                     <h1>4</h1>
                     </div>
+                    <div className="col-5">
+                    <FontAwesomeIcon icon="fa-solid fa-calendar-days" className="img-fluid" color="green" />
+                    </div>
+                   </div>
                     <div className="col-12">Aguardando para Hoje</div>
                 </div>
-                <div className="col-3 alert alert-danger m-2">
-                    <div className="col-7">
-                    <h5>Auardando</h5>
+                <div className="col-3 alert alert-secondary m-2">
+                   <div className="row">
+                   <div className="col-7">
+                    <h5>Aguardando</h5>
                     <h1>4</h1>
                     </div>
-                    <div className="col-12">Aguardando Atendimentos</div>
+                    <div className="col-5">
+                    <FontAwesomeIcon icon="fa-solid fa-calendar-days" className="img-fluid" color="red" />
+                    </div>
+                   </div>
+                    <div className="col-12">Aguardando Atendimento</div>
                 </div>
+              
             </div>
             <div className="row">
                 <div className="col-12">
